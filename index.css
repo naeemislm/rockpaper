@@ -1,0 +1,48 @@
+body{
+    background-image: url(images/background_01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial; }
+
+.title{
+    font-size: 30px; }
+
+.icons1{
+    height: 80px; }
+.icons2{
+    height: 80px;
+    width: 80px; }
+.icons3{
+    height: 80px;
+    width: 85px; }
+
+.mymove-button{
+    background-color: rgba(255,255,255, 0.3);
+    border: 3px dotted white;
+    border-radius: 100px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer; }
+
+.result-button{
+    background-color: rgba(255,255,255, 0.2);
+    border: none;
+    border-radius: 100px; }
+
+.result-icon{
+    height: 40px; }
+
+.reset-button{
+    border: none;
+    padding: 10px;
+    margin-left: 25px;
+    background-color: rgba(185, 255, 255,0.3);
+    border-radius: 20px;
+    cursor: pointer; }
+
+.result1{
+    font-size: 30px;
+    font-weight: bold; }
+
+.final-score{
+    margin-top: 40px; }

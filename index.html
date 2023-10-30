@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissor</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        
+        <h2 class="title">Playing Rock Paper Scissor !!!</h2>
+        <button onclick="
+            myInput = 'rock';
+            playGame(myInput);
+            " class="mymove-button"><img src="images/rock_01.png" alt="Rock" class="icons1"></button>
+        <button onclick="
+            myInput ='paper';
+            playGame(myInput);
+            " class="mymove-button"><img src="images/paper_01.png" alt="Paper" class="icons2"></button>
+        <button onclick="
+            myInput ='scissor';
+            playGame(myInput);
+            " class="mymove-button"><img src="images/scissor_01.png" alt="Scissor" class="icons3"></button>  
+
+        <button onclick="
+            score.wins =0;
+            score.losses =0;
+            score.draws =0;
+            showScore();
+            localStorage.removeItem('savedscore');
+            alert('scores has been reset');
+            document.querySelector('.js-result1').innerHTML='';
+            document.querySelector('.js-result2').innerText='';
+            " class="reset-button">Reset score</button>
+     
+        <p class="js-result1 result1"></p>
+        <p class="js-result2"></p> 
+        <p class="js-score final-score"></p>
+
+    </body>
+
+    <script src="index.js"></script>
+    <script>
+        let myInput;
+        showScore(); </script>
+
+</html>
